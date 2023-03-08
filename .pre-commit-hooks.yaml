@@ -1,0 +1,8 @@
+# This hook requires `pdm add -d mypy` or similar first.
+- id: mypy
+  name: mypy (via pdm)
+  description: The mypy type checker
+  'types_or': [python, pyi]
+  language: system
+  entry: pdm run mypy
+  args: [--scripts-are-modules]
